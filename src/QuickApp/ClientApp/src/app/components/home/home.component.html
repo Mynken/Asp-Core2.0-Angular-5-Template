@@ -7,4 +7,17 @@
     <div [@fadeInOut]>
         <p>Hello from Home</p>
     </div>
+
+    <div class="ui-g-12 ui-md-4">
+        <h3>Icon</h3>
+        <p-calendar [(ngModel)]="date3" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date3|date}}</span>
+    </div>
+
+    <h3>Severity Buttons</h3>
+<button pButton type="button" (click)="count()" label="Primary"></button>
+<button pButton type="button" (click)="count()" label="Secondary" class="ui-button-secondary"></button>
+<button pButton type="button" (click)="count()" label="Success" class="ui-button-success"></button>
+<button pButton type="button" (click)="count()" label="Info"  class="ui-button-info"></button>
+<button pButton type="button" (click)="count()" label="Warning"  class="ui-button-warning"></button>
+<button pButton type="button" (click)="count()" label="Danger"  class="ui-button-danger"></button>
 </div>

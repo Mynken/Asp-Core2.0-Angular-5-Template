@@ -46,6 +46,7 @@ import { UserPreferencesComponent } from './components/controls/managment/user-p
 import { UsersManagementComponent } from './components/controls/managment/users-management/users-management.component';
 import { RolesManagementComponent } from './components/controls/managment/roles-management/roles-management.component';
 import { RoleEditorComponent } from './components/controls/managment/role-editor/role-editor.component';
+import { AppPrimeNgComponentsModule } from './components/app-primeng-components-module';
 
 @NgModule({
     imports: [
@@ -67,6 +68,7 @@ import { RoleEditorComponent } from './components/controls/managment/role-editor
         BsDropdownModule.forRoot(),
         CarouselModule.forRoot(),
         ModalModule.forRoot(),
+        AppPrimeNgComponentsModule,
         ChartsModule
     ],
     declarations: [
