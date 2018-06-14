@@ -47,6 +47,10 @@ import { UsersManagementComponent } from './components/controls/managment/users-
 import { RolesManagementComponent } from './components/controls/managment/roles-management/roles-management.component';
 import { RoleEditorComponent } from './components/controls/managment/role-editor/role-editor.component';
 import { AppPrimeNgComponentsModule } from './components/app-primeng-components-module';
+import { FswButtonComponent } from './components/controls/fsw-controls/fsw-button/fsw-button.component';
+import { FswInputTextComponent } from './components/controls/fsw-controls/fsw-input-text/fsw-input-text.component';
+import { FswAutocompleteComponent } from './components/controls/fsw-controls/fsw-autocomplete/fsw-autocomplete.component';
+import { FswRadioButtonComponent } from './components/controls/fsw-controls/fsw-radio-button/fsw-radio-button.component';
 
 @NgModule({
     imports: [
@@ -86,7 +90,11 @@ import { AppPrimeNgComponentsModule } from './components/app-primeng-components-
         BootstrapToggleDirective,
         BootstrapSelectDirective,
         BootstrapDatepickerDirective,
-        GroupByPipe
+        GroupByPipe,
+        FswButtonComponent,
+        FswInputTextComponent,
+        FswAutocompleteComponent,
+        FswRadioButtonComponent
     ],
     providers: [
         { provide: 'BASE_URL', useFactory: getBaseUrl },
@@ -104,9 +112,6 @@ import { AppPrimeNgComponentsModule } from './components/app-primeng-components-
 })
 export class AppModule {
 }
-
-
-
 
 export function getBaseUrl() {
     return document.getElementsByTagName('base')[0].href;
